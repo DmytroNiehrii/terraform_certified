@@ -32,7 +32,7 @@ resource "aws_instance" "web" {
   }
 
   lifecycle {
-    create_before_destroy = true
+    create_before_destroy = true // for zero downtime
   }
 }
 
